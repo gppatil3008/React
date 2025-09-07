@@ -84,7 +84,7 @@ function App() {
             onClick={addTransaction}
             className="bg-blue-500 text-white px-4 py-2 rounded w-full"
           >
-            Add Transaction
+            Add 
           </button>
         </div>
 
