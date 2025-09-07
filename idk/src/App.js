@@ -6,7 +6,6 @@ function App() {
   const [text, setText] = useState("");
   const [amount, setAmount] = useState("");
 
-  // Add new transaction
   const addTransaction = () => {
     if (!text || !amount) return;
     const newTransaction = {
@@ -19,7 +18,6 @@ function App() {
     setAmount("");
   };
 
-  // Income & Expense calculation
   const income = transactions
     .filter((t) => t.amount > 0)
     .reduce((acc, t) => acc + t.amount, 0);
